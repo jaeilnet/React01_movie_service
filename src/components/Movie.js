@@ -17,22 +17,21 @@ function Movie({ id, year, title, summary, poster, genres}){
         genres
       }
     }}>
-      
-        <img src={poster} alt={title} title={title}></img>
-        <div className="movie__meta">
-          <h3 className="movie__title">{title}</h3>
-          <h5 className="movie__year">{year}</h5>
-          <ul className="movie__genres">
-            {genres.map((geners, index) => (
-              <li key={index} className="genres__genre">
-                {geners}
-              </li>))}
-          </ul>
-          <p className="movie__summary">{summary.slice(0, 180)}...</p>
-      </div>
-      </Link>
+      <img src={poster} alt={title} title={title}></img>
+      <div className="movie__meta">
+        <h3 className="movie__title">{title}</h3>
+        <h5 className="movie__year">{year}</h5>
+        <ul className="movie__genres">
+          {genres.map((geners, index) => (
+            <li key={index} className="genres__genre">
+              {geners}
+            </li>))}
+        </ul>
+        <p className="movie__summary">{summary.slice(0, 180)}...</p>
     </div>
-    )
+    </Link>
+  </div>
+  )
 }
 
 Movie.propTpyes = {

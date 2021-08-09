@@ -17,3 +17,4 @@ class Movie_Detail extends React.Component {
   }
 }
 export default Movie_Detail 
+
